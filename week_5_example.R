@@ -12,4 +12,4 @@ ggplot(midwest, aes(x = area, y = poptotal)) + # Identifying which data set and 
        y = "Population", 
        x = "Area", 
        title = "Scatterplot", 
-       caption = "Source: midwest")
+       caption = "Source: midwest") 
