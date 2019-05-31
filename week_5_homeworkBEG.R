@@ -10,6 +10,8 @@
 
 library(ggplot)
 
+# First the mpg bar chart
+
 temp<-round(mpg[9])  # "hwy" is the ninth column in the dataset.  mpg[9] keeps temp as
                      #  a data frame; using mpg$hwy would make it a vector (type numeric)
 ggplot(data=temp)+
@@ -19,6 +21,8 @@ ggplot(data=temp)+
   scale_y_continuous(breaks=seq(0,35,5),limits=c(0,35))+
   geom_text(stat='count',aes(x=hwy,label=..count..),vjust=-0.5)+
   labs(x="MPG Highway")
+
+# Now the dotplots
 
 options(scipen = 999) # Turn off scientific notation
 
