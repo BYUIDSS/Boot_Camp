@@ -1,2 +1,2 @@
 # Boot_Camp
-This is for any boot camp related work. It's organized by semester. 
+This is basic information about R, R studio and gitHub. All questions and suggestions are welcome, please post on the gitHub issues page.
