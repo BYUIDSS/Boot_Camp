@@ -1,7 +1,7 @@
 ---
 title: "Markdowns and More"
 author: "YOUR NAME"
-date: "`r format(Sys.time(), '%B %d, %Y')`"
+date: "October 07, 2020"
 output:
   html_document:  
     keep_md: true
@@ -13,9 +13,7 @@ output:
     fig_align: 'center'
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 ## R Markdown
 
@@ -23,12 +21,24 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r libraries, message=F, warning=F}
+
+```r
 library(tidyverse)
 ```
 
-```{r cars}
+
+```r
 summary(cars)
+```
+
+```
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
 ```
 
 #### Including Plots
@@ -37,13 +47,15 @@ summary(cars)
 
 You can also embed plots, for example:
 
-```{r pressure, message=F, warning=F}
+
+```r
 # Now when you want to make a inside of and R chunk you would need to put the # sign in front so it's a little different depending on if you are inside or outside of an R chunk.
 pressure %>% 
   ggplot(aes(x = temperature, y = pressure)) +
   geom_point()
-
 ```
+
+![](Markdowns_and_More_files/figure-html/pressure-1.png)<!-- -->
 
 Note that the `message=F, warning=F` parameter was added to the code chunk to prevent printing of warnings that or other messages that might be tied to the graph. Sometimes R removes variables like NA's automatically and it would warn you when it does adding `message=F, warning=F` would remove that warning. 
 
