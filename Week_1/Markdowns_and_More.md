@@ -86,5 +86,9 @@ Let's try!
 
 ## Extras for Fun!! 
 
+Let's try to graph the data we just read in!
+
+
+
 
 
