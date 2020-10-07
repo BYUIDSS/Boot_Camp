@@ -1592,7 +1592,8 @@ div.tocify {
 <h2>R Markdown</h2>
 <p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
 <p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
-<pre class="r"><code>library(tidyverse)</code></pre>
+<pre class="r"><code>library(tidyverse)
+library(mosaic)</code></pre>
 <pre class="r"><code>summary(cars)</code></pre>
 <pre><code>##      speed           dist       
 ##  Min.   : 4.0   Min.   :  2.00  
@@ -1621,12 +1622,13 @@ pressure %&gt;%
 </div>
 <div id="console" class="section level2">
 <h2>Console</h2>
-</div>
-<div id="libraries-and-packages" class="section level2">
-<h2>Libraries and Packages</h2>
+<p>The console is a place where temporary code is used, this is a good place for diagnostics. It’s good place to run the <code>?</code> function, for example try <code>?tidyverse</code> in the console, the help file for <code>tidyverse</code> should have popped up in the bottom right panel of Rstudio. There good things do in the console are <code>View(KidsFeet)</code> for viewing data sets or <code>head(KidsFeet)</code> or <code>table(KidsFeet$sex)</code>.</p>
+<p>I don’t suggest editing data sets or graphing in the console.</p>
 </div>
 <div id="working-directory-paths-and-reading-in-data" class="section level2">
 <h2>Working Directory, Paths, and Reading in Data</h2>
+<p>In the console type <code>getwd()</code> and hit enter. The result should be you current working directory in essence this is where your computer is working. This is very important to know if you are trying to bring in your own data. To read in data you need to have the correct file path, basically you need to give you computer directions.</p>
+<p>Let’s try!</p>
 </div>
 <div id="extras-for-fun" class="section level2">
 <h2>Extras for Fun!!</h2>

@@ -24,6 +24,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```r
 library(tidyverse)
+library(mosaic)
 ```
 
 
@@ -70,12 +71,17 @@ Scripts do not knit into documents like RMD's but they can be very helpful to so
 
 ## Console 
 
+The console is a place where temporary code is used, this is a good place for diagnostics. It's good place to run the `?` function, for example try `?tidyverse` in the console, the help file for `tidyverse` should have popped up in the bottom right panel of Rstudio. There good things do in the console are `View(KidsFeet)` for viewing data sets or `head(KidsFeet)` or `table(KidsFeet$sex)`.
 
-
-## Libraries and Packages 
-
+I don't suggest editing data sets or graphing in the console.
 
 ## Working Directory, Paths, and Reading in Data
+
+In the console type `getwd()` and hit enter. The result should be you current working directory in essence this is where your computer is working. This is very important to know if you are trying to bring in your own data. To read in data you need to have the correct file path, basically you need to give you computer directions.  
+
+Let's try!
+
+
 
 
 ## Extras for Fun!! 
