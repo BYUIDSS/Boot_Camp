@@ -1,6 +1,6 @@
 ---
 title: "Markdowns and More"
-author: "YOUR NAME"
+author: "Vivian Ashton"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
   html_document:  
@@ -69,7 +69,10 @@ In the console type `getwd()` and hit enter. The result should be you current wo
 
 Let's try!
 
-```{r}
+```{r warning=FALSE, message=FALSE}
+
+cereal <- read_csv("../../data/cereal.csv")
+#View(cereal)
 
 ```
 
@@ -79,8 +82,24 @@ Let's try!
 Let's try to graph the data we just read in!
 
 ```{r}
+cereal %>% 
+  ggplot(aes(x = calories, y =sodium, color = mfr)) +
+  geom_point(size = 3) +
+  labs(x = "Calories", y = "Sodium", title = "Yummy, Yummy", color = "Manufacturer") + 
+  theme_bw() +
+  theme(plot.title = element_text(hjust = 0.5)) 
+  
+
+## Here's a good reference for trying out other types of plots http://r-statistics.co/ggplot2-Tutorial-With-R.html
+```
+
+
+Try out this link <http://r-statistics.co/ggplot2-Tutorial-With-R.html> to look of examples on how to build a barchart and try it out for yourself. 
+
+```{r}
 
 ```
+
 
 
 
