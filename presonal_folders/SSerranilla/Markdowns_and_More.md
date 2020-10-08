@@ -1,6 +1,6 @@
 ---
 title: "Markdowns and More"
-author: "YOUR NAME"
+author: "Sigmund Serranilla"
 date: "October 07, 2020"
 output:
   html_document:  
@@ -82,6 +82,35 @@ In the console type `getwd()` and hit enter. The result should be you current wo
 Let's try!
 
 
+```r
+cereal <- read_csv("../../data/cereal.csv")
+```
+
+```
+## Parsed with column specification:
+## cols(
+##   name = col_character(),
+##   mfr = col_character(),
+##   type = col_character(),
+##   calories = col_double(),
+##   protein = col_double(),
+##   fat = col_double(),
+##   sodium = col_double(),
+##   fiber = col_double(),
+##   carbo = col_double(),
+##   sugars = col_double(),
+##   potass = col_double(),
+##   vitamins = col_double(),
+##   shelf = col_double(),
+##   weight = col_double(),
+##   cups = col_double(),
+##   rating = col_double()
+## )
+```
+
+```r
+view(cereal)
+```
 
 
 ## Extras for Fun!! 
