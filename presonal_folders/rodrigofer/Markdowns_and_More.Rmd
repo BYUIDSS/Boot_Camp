@@ -71,6 +71,9 @@ Let's try!
 
 ```{r}
 
+cereal <- read_csv("../../data/cereal.csv")
+#View(cereal)
+
 ```
 
 
