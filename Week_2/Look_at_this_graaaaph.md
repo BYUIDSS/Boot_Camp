@@ -54,7 +54,7 @@ Scatterplots are good for 2 quantitative variables, it's you basic (x,y) graph.
 
 #### Bar Charts 
 
-Bar charts are counting graphs so the are best for Qualitative variables. You will want your variables to be 
+Bar charts are counting graphs so the are best for Qualitative variables. You will want your variables to be factors.
 
 
 
