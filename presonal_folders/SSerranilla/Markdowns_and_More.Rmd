@@ -1,6 +1,6 @@
 ---
 title: "Markdowns and More"
-author: "YOUR NAME"
+author: "Sigmund Serranilla"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
   html_document:  
@@ -70,6 +70,9 @@ In the console type `getwd()` and hit enter. The result should be you current wo
 Let's try!
 
 ```{r}
+
+cereal <- read_csv("../../data/cereal.csv")
+view(cereal)
 
 ```
 

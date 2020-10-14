@@ -1,6 +1,6 @@
 ---
 title: "Markdowns and More"
-author: "Sigmund Serranilla"
+author: "YOUR NAME"
 date: "October 07, 2020"
 output:
   html_document:  
@@ -106,10 +106,6 @@ cereal <- read_csv("../../data/cereal.csv")
 ##   cups = col_double(),
 ##   rating = col_double()
 ## )
-```
-
-```r
-view(cereal)
 ```
 
 
