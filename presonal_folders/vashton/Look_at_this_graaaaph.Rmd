@@ -113,7 +113,7 @@ table(pokemon$type1)
 ## Extra's 
 
 Create your own graph using the ggplot [cheetsheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
-Try somthing fun! 
+Try something fun! 
 
 
 ```{r}

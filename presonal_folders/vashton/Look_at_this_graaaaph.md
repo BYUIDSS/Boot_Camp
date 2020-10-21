@@ -1,7 +1,7 @@
 ---
 title: "Look at this Graaaaaph"
 author: "Vivian Ashton"
-date: "October 14, 2020"
+date: "October 21, 2020"
 output:
   html_document:  
     keep_md: true
@@ -139,7 +139,7 @@ table(pokemon$type1)
 ## Extra's 
 
 Create your own graph using the ggplot [cheetsheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
-Try somthing fun! 
+Try something fun! 
 
 
 
