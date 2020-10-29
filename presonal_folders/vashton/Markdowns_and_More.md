@@ -1,7 +1,7 @@
 ---
 title: "Markdowns and More"
-author: "YOUR NAME"
-date: "October 07, 2020"
+author: "Vivian Ashton"
+date: "October 08, 2020"
 output:
   html_document:  
     keep_md: true
@@ -82,11 +82,35 @@ In the console type `getwd()` and hit enter. The result should be you current wo
 Let's try!
 
 
+```r
+cereal <- read_csv("../../data/cereal.csv")
+#View(cereal)
+```
 
 
 ## Extras for Fun!! 
 
 Let's try to graph the data we just read in!
+
+
+```r
+cereal %>% 
+  ggplot(aes(x = calories, y =sodium, color = mfr)) +
+  geom_point(size = 3) +
+  labs(x = "Calories", y = "Sodium", title = "Yummy, Yummy", color = "Manufacturer") + 
+  theme_bw() +
+  theme(plot.title = element_text(hjust = 0.5)) 
+```
+
+![](Markdowns_and_More_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+
+```r
+## Here's a good reference for trying out other types of plots http://r-statistics.co/ggplot2-Tutorial-With-R.html
+```
+
+
+Try out this link <http://r-statistics.co/ggplot2-Tutorial-With-R.html> to look of examples on how to build a barchart and try it out for yourself. 
+
 
 
 
