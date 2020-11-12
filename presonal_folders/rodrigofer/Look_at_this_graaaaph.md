@@ -1,7 +1,7 @@
 ---
 title: "Look at this Graaaaaph"
-author: "YOUR NAME"
-date: "October 14, 2020"
+author: "Rodrigo Ferreira"
+date: "November 11, 2020"
 output:
   html_document:  
     keep_md: true
