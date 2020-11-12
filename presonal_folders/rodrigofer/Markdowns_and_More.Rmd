@@ -1,6 +1,6 @@
 ---
 title: "Markdowns and More"
-author: "YOUR NAME"
+author: "Sigmund Serranilla"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
   html_document:  
@@ -25,6 +25,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```{r libraries, message=F, warning=F}
 library(tidyverse)
+#install.packages("mosaic")
 library(mosaic)
 ```
 
@@ -72,7 +73,7 @@ Let's try!
 ```{r}
 
 cereal <- read_csv("../../data/cereal.csv")
-#View(cereal)
+view(cereal)
 
 ```
 

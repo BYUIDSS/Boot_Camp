@@ -1,7 +1,7 @@
 ---
 title: "Markdowns and More"
-author: "YOUR NAME"
-date: "October 07, 2020"
+author: "Sigmund Serranilla"
+date: "November 11, 2020"
 output:
   html_document:  
     keep_md: true
@@ -24,6 +24,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```r
 library(tidyverse)
+#install.packages("mosaic")
 library(mosaic)
 ```
 
@@ -87,7 +88,8 @@ cereal <- read_csv("../../data/cereal.csv")
 ```
 
 ```
-## Parsed with column specification:
+## 
+## -- Column specification --------------------------------------------------------
 ## cols(
 ##   name = col_character(),
 ##   mfr = col_character(),
@@ -109,7 +111,7 @@ cereal <- read_csv("../../data/cereal.csv")
 ```
 
 ```r
-#View(cereal)
+view(cereal)
 ```
 
 
