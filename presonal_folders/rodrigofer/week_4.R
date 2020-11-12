@@ -15,7 +15,7 @@ cereal %>%
 
 cereal %>% 
   top_n(10, protein) %>% 
-  ggplot(aes(x = reorder(name, -protein), y = protein, fill = name)) +
+  ggplot(aes(x = reorder(namea, -protein), y = protein, fill = name)) +
   geom_bar(stat = "identity") + coord_flip() +
   theme_light() +
   labs(x = "Protein", y = "Name", title = "This is neat", subtitle = "I don't really like cereal anyway") +
