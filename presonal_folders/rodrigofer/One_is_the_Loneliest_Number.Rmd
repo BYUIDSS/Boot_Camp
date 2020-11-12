@@ -1,6 +1,6 @@
 ---
 title: "One is the Loneliest Number"
-author: "Sigmund Serranilla"
+author: "Rodrigo Ferreira"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
   html_document:  
@@ -15,6 +15,7 @@ output:
 
 ```{r message=FALSE, warning=FALSE}
 ## loading libraries
+#install.packages("tidyverse")
 library(tidyverse)
 
 ```

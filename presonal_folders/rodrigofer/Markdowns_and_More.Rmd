@@ -25,6 +25,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```{r libraries, message=F, warning=F}
 library(tidyverse)
+#install.packages("mosaic")
 library(mosaic)
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: "Look at this Graaaaaph"
-author: "YOUR NAME"
+author: "Rodrigo Ferreira"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
   html_document:  
