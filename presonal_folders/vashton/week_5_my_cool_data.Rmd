@@ -1,0 +1,30 @@
+---
+title: "My Awesome Data"
+author: "Vivian Ashton"
+date: "11/4/2020"
+output: html_document
+---
+
+
+
+```{r}
+#ctrl +Alt +i
+library(tidyverse)
+
+dat <-  read_csv("path/to/your/data")
+
+```
+
+My first question is to see cool things?
+
+```{r}
+#graph the cool things
+
+View(dat)
+dat %>% 
+  ggplot(aes( x = somthing, y = otherthing)) +
+  goem_point()
+
+```
+
+
