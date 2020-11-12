@@ -11,11 +11,14 @@ output: html_document
 #ctrl +Alt +i
 library(tidyverse)
 
-dat <-  read_csv("path/to/your/data")
+dat <-  read_csv("path/to/your/data.csv")
 
 ```
 
 My first question is to see cool things?
+
+
+WOrds  <!-- adsklfja;sldkjf;lakjsdflkj ---> words 
 
 ```{r}
 #graph the cool things

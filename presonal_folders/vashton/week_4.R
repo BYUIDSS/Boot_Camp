@@ -13,6 +13,7 @@ cereal %>%
   group_by(mfr) %>% 
   summarise(Max_Protien = max(protein))
 
+
 cereal %>% 
   top_n(10, protein) %>% 
   ggplot(aes(x = reorder(name, -protein), y = protein, fill = name)) +
