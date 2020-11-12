@@ -1,6 +1,6 @@
 ---
 title: "Look at this Graaaaaph"
-author: "Rodrigo Ferreira"
+author: "YOUR NAME"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
   html_document:  
@@ -32,9 +32,11 @@ The library `ggplot` can be accessed alone or you can accesses it through the `t
 ## lets start by reading in the data 
 ## Don't forget to set the session!!
 ## Lets read in the cereal and the pokemon datasets
-# Alt plus Minus key <- 
-cereal <- read_csv("../../data/cereal.csv")
-pokemon <- read_csv("../../data/pokemon.csv")
+
+cereal <- read.csv("../../data/cereal.csv")
+
+pokemon <- read.csv("../../data/pokemon.csv")
+
 
 ```
 
@@ -46,19 +48,19 @@ Scatterplots are good for 2 quantitative variables, it's you basic (x,y) graph.
 ## We don't want to keep reading the dataset in to our environment so we're going to graph in this chunk.
 
 #colnames(pokemon)
+
 ## First the base r plot 
-#plot(y ~ x, data=NameOfYourData)
 plot(weight_kg ~ speed, data=pokemon)
 
+
+
 ## Now the ggplot
-# data %>% 
-#   ggplot(aes(x = Colname, y = Colname)) +
-#   geom_point()
-pokemon %>% 
-   ggplot(aes(x = speed, y = weight_kg, color = type1)) +
-   geom_point() +
-  labs(title="Cool Words!",x="Speed",y="Weight (kg)") +
-  theme_bw()
+  pokemon %>% 
+    ggplot(aes(x = speed, y = weight_kg, color = type1)) +
+    geom_point() + 
+    labs(title = "Cool Words!", x = "Speed", y = "Weight (KG)") +
+    theme_bw()
+
 
 ```
 
@@ -74,15 +76,13 @@ Bar charts are counting graphs so the are best for Qualitative variables. You wi
 #barplot(table(data$Colname), col = "blue", xlab = "Name")
 
 ## ggplot 
-#fill = "blue" in geom_bar
  pokemon %>%
   group_by(type1) %>%
-  summarise(Count=n()) %>%
-   ggplot(aes(x = reorder(type1,-Count),y=Count, fill=type1)) +
-   geom_bar(stat = "identity",position = "dodge", color = "black") +
-   labs(x = "Type of Pokemon", title = "Chart") +
-    theme_dark()
-  
+  summarise(count = n()) %>%
+   ggplot(aes(x = reorder(type1, -count), y = count, fill = type1)) +
+   geom_bar(stat = "identity", position = "dodge", color = "black") +
+   labs(x = "Type of Pokemon", y = "Amount") +
+  theme_dark()
 ## For if you want more than one variale 
 # data %>%
 #   ggplot(aes(x = Colname, fill = Colname)) +
@@ -105,8 +105,8 @@ table(pokemon$type1)
 
 ## Now the ggplot
  pokemon %>% 
-  #filter(type1 == "water") %>%
-  # View()
+#  filter(type1 == water) %>%
+ 
    ggplot(aes(x = type1, y = speed)) +
    geom_boxplot()
 
